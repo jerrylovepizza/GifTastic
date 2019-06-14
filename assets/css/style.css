@@ -1,0 +1,207 @@
+body {
+    /* background: url(../images/gifbg.jpg); */
+    /* background-size: fixed; */
+    /* background-attachment: fixed; */
+
+    /* animate background- */
+    background: linear-gradient(45deg,#fac1ff, #ffd3d3, #bba8ff);
+    animation: Gradient 20s ease infinite;
+    background-size: 1000% 1000%;
+    /* -animate background */
+}
+
+@keyframes Gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+
+/* nav bar */
+.gif-header{
+    position: relative;
+    height: 100px;
+    /* padding: 20px; */
+    font-size: 28px;
+    color: wheat;
+    background: linear-gradient(90deg, rgb(0, 0, 0), rgb(122, 122, 122));
+}
+
+.gifhy-logo{
+    float: left;
+    position: relative;
+    left: 3%;
+}
+
+.header-word{
+    float: left;
+    position: relative;
+    left: 4%;
+    top:20px;
+}
+
+/* nav search bar */
+.form-search{
+    position: absolute;
+    right:50px;
+    top:0;
+    margin: 25px;
+    font-family: 'Black And White Picture', sans-serif;
+    font-size: 30px;
+}
+
+.gif-input{
+    position: relative;
+    width: 340px;
+    font-size: 25px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 46px;
+}
+
+#gif-submit{
+    position: absolute;
+    right:0px;
+    top:0;
+    font-size: 19px;
+    padding: 5px 9px;
+    margin: 5px;
+    border: 1px solid;
+    border-radius: 46px;
+    /* background:rgb(28, 3, 61, .1); */
+}
+
+/* buttons list */
+.gif-buttons-default{
+    position: relative;
+    height: auto;
+    margin: 20px 40px;
+    }
+
+.gif-buttons-default :hover{
+    font-weight: 300;
+    background: linear-gradient(20deg, rgb(0, 0, 0), rgb(161, 134, 196));
+}
+
+.newbutton-js, .favpageButton-js{
+    padding: 0 25px 3px;
+    margin: 5px 1px;
+    border: 1px solid;
+    border-radius: 3px;
+    color: wheat;
+    font-weight: 600;
+    background: linear-gradient(190deg, rgb(0, 0, 0), rgb(161, 134, 196));
+    box-shadow: 0 4px 8px 0 rgba(44, 16, 66, 0.9);
+}
+
+
+/* gif and rating list */
+.empty-box{
+    margin-bottom: 50px;
+    padding: 15px;
+    border: 2px inset;
+    border-radius: 6px;
+    text-align: center;
+    font-family: 'Black And White Picture', sans-serif;
+    font-size: 40px;
+    background: rgb(0, 0, 0, .1);
+    /* overflow: auto; */
+}
+
+.gif-background{
+    margin: 50px 20px;
+    opacity: .5;
+}
+
+.more-gif-button{
+    text-align: center;
+    padding: 5px 10px;
+    margin: 10px 47.5%;
+    /* border: 1px solid; */
+    border-radius: 50px;
+    color: rgb(28, 3, 61);
+    font-weight: 600;
+    font-size: 16px;
+    background: linear-gradient(190deg, wheat, rgb(161, 134, 196));
+}
+
+/* animal gifs */
+.rate-and-gif{
+    float: left;
+    position: relative;
+    width: 200px;
+    height: 260px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: wheat;
+    background: rgb(139, 122, 146);
+    box-shadow: 0 4px 8px 0 rgb(68, 68, 68);
+
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+}
+
+.newgif-js{
+    width: 180px;
+    height: 160px;
+}
+
+footer {
+    float: left;
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    font-size: 14px;
+    color: grey;
+    height: 20px;
+    }
+
+/* ---------Favorite button----------- */
+.favme {
+    display:block;
+    font-size: ms(2);
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    box-shadow: none;
+    transition: all .2s ease;
+    color: #CBCDCE;
+    margin: 0;
+}
+.star-color {
+    color: rgb(220, 50, 50);
+}
+
+/* media query */
+@media (max-width: 675px) {
+    .gif-header{
+        background: linear-gradient(90deg, rgb(0, 0, 0), rgb(58, 58, 58));
+    }
+    .body-no-nav{
+        margin: 2px;
+    }
+    .form-search, .gif-input{
+        position: relative;
+        width: 98%;
+        left: 0;
+        margin:2px;
+    }
+    #gif-submit{
+        top: 2px;
+        right: 10px;
+    }
+    .empty-box{
+        width: 100%;
+        margin: 0px;
+    }
+    .rate-and-gif, .newgif-js{
+        margin:10px 0;
+        width: 99%;
+        height: 420px;
+    }
+    .newgif-js{
+        height: 300px;
+    }
+
+}
